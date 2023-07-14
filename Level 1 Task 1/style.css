@@ -1,0 +1,357 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    background:url('/new2.jpg');
+    background-size: cover;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+.container{
+    background: url('/background2.png');
+    background-size: cover;
+    width: 90vw;
+    height: 100vh;
+    margin: auto auto;
+    z-index: -1;
+    /* border: 2px solid  black; */
+}
+
+/* header part */
+
+.container .header{
+    width: 95%;
+    height: 100px;
+    margin:auto;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container .header .logo{
+    /* border: 2px solid black; */
+    width: 15%;
+    height: 80%;    
+}
+.container .header .logo img{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.container .header .nav{
+    /* border: 2px solid red; */
+    width: 60%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .header .nav ul{
+    
+    list-style: none;
+    display: flex;
+    width: 98%;
+    height: 90%;
+    /* border: 2px solid black; */
+    justify-content: space-around;
+    align-items: center;
+
+}
+.container .header .nav ul li{
+    position: relative;
+    font-size: 20px;
+}
+.container .header .nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 5px ;
+    /* border: 2px solid beige; */
+    color: #3D155F;
+    text-transform:uppercase;
+}
+.container .header .nav ul li a:hover{
+    color: #5c367e;
+}
+.container .header .nav ul li a::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top:0 ;
+    left: 0;
+    transition: 0.5s;
+    margin: auto;
+    border-bottom: 2px solid black;
+}
+
+.container .header .nav ul li a:hover::before{
+    width: 100%;
+}
+
+
+/* search bar */
+.search{
+    border: 2px solid black;
+    position: relative;
+    border-radius: 50%;
+}
+
+.fa{
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: #07051a;
+
+    font-size: 1.2em;
+
+}
+
+.section{
+    width: 90%;
+    height: 70%;
+    /* border: 2px solid beige; */
+    margin: 50px auto;
+    text-align: center;
+
+}
+
+.section .text{
+    font-size: 17px;
+
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 60%;
+    margin-top: 70px;
+    padding-top: 60px;
+}
+.text h1{
+    margin-bottom: 20px;
+}
+.text p{
+    color:black;
+    
+    
+}
+.section .button{
+    /* border: 2px solid #3D155F; */
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+
+    /* border-radius: 50px; */
+    font-weight: bold;
+    position: relative;
+}
+
+.button a{
+    font-size: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    border: 2px solid #3D155F;
+    border-radius: 50px;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    z-index: 0;
+}
+.button a span{
+             
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 2px solid black; */
+    width: 0%;
+    height: 100%;
+    border-radius: 50px;
+    transition:0.5s;
+    background-color: #3D155F;
+    z-index: -1;
+    opacity: 0;
+            
+}
+.button a:hover{
+            
+    color:wheat;
+    opacity: 100%;
+}
+.button a:hover span{
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+}
+
+.container2{
+    background: url('/pbackground.jpg');
+    background-size: cover;
+    width: 90vw;
+    height: 100vh;
+    margin: auto auto;
+    z-index: -1;
+    /* border: 2px solid  black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container2 h1{
+    font-size: 40px;
+    margin: 30px 0;
+    padding: 10px;
+    font-family: 'Libre Baskerville', serif;
+
+}
+.container2 .Person{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 80%;
+    
+}
+.Person .detail{
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid purple;
+    border-radius: 70px 0px 70px 0px;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.Person .read{
+    width: 50%;
+    /* border: 2px solid black; */
+}
+.read h2{
+    text-align: center;
+    /* border: 2px solid black; */
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.read h2 a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-family: 'Libre Baskerville', serif;
+    /* border: 2px solid red; */
+    padding: 2px;
+    position: relative;
+}
+.read h2 a::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+.read h2 a:hover:before{
+    width: 100%;
+}
+.read ul{
+    list-style: none;
+    /* border: 2px solid gray; */
+    padding: 20px;
+}
+.read ul li{
+    text-align: justify;
+    font-size: 15px;
+}
+.read ul li a{
+    text-decoration: none;
+}
+.Person .photo{
+    width: 40%;
+    height: 70%;
+    border-left: 1px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Person .photo .img{
+    /* border: 2px solid red; */
+    width: 75%;
+    height: 100%;
+    
+}
+.Person .photo .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.container3{
+    background: url('/pbackground.jpg');
+    background-size: cover;
+    width: 90vw;
+    height: 100vh;
+    margin: auto auto;
+
+    /* border: 2px solid  black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container3 .Person{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 80%;
+
+    
+}
+.footer{
+    background: black;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer .icons{
+    /* border: 2px solid wheat; */
+    width: 20%;
+    height: 30%;
+    display: flex;
+}
+.footer .icons .logo{
+    width: 33%;
+    align-items: center;
+    /* border: 2px solid red; */
+
+}
+.footer .icons .logo img{
+    height: 100%;
+    width: 75%;
+    margin: auto auto;
+}
+.footer .copyright{
+    /* border: 2px solid wheat; */
+    color: white;
+    width: 20%;
+    height: 30%;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+
